@@ -1,0 +1,25 @@
+{% include 'layout.html' %}
+
+<div class="container mt-5">
+    <h3>Add details to get image</h3>
+
+    <div>
+        <div class="card text-center mt-3">
+            <div class="card-header">
+                Images:
+            </div>
+            <div class="card-body">
+                <div>
+                    <img src="{{image_response}}" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form class="container" id="footer" action="/image" method="POST">
+        <div class="input-group mb-3">
+            <input class="form-control" placeholder="Add message here" name="user_input"></input>
+            <button type="submit" class="btn btn-primary-outline">Send</button>
+        </div>
+    </form>
+</div>
